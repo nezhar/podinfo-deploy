@@ -21,22 +21,19 @@ spec:
       containers:
       - name: metricsd
         image: quay.io/brice/metrics-demo:v4-subscription-service
-        command:
-        - ./metrics
-        - --port=9898
         ports:
-        - containerPort: 9898
+        - containerPort: 3000
         readinessProbe:
           httpGet:
-            path: /readyz
-            port: 9898
+            path: /
+            port: 3000
           initialDelaySeconds: 1
           periodSeconds: 5
           failureThreshold: 1
         livenessProbe:
           httpGet:
-            path: /healthz
-            port: 9898
+            path: /
+            port: 3000
           initialDelaySeconds: 1
           periodSeconds: 10
           failureThreshold: 2
