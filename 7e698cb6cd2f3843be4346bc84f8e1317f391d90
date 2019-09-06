@@ -1,0 +1,1 @@
+{"jobID":"2ff576d9-3e73-4f1c-0c03-fea01ff370af","spec":{"type":"policy","cause":{"Message":"","User":"Harald Nezbeda \u003charry@5c.ro\u003e"},"spec":{"dev:deployment/podinfo":{"add":{"automated":"true"},"remove":null}}},"result":null}
